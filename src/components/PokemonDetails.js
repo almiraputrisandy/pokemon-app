@@ -11,8 +11,11 @@ function CatchPokemon(pokemon){ //Catch Pokemon function
     var chance = Probability(2); //Generate random number between 0 and 1 for the 50% chance of catching a pokemon
     var pokemonsList = JSON.parse(window.localStorage.getItem("myPokemons")); //Get list of caught pokemon
     var existingNicknames = [];
-    pokemonsList.map(p => existingNicknames.push(p.nickname)); //Get all existing nicknames and put in an array
 
+    if(pokemonsList!=null){
+        pokemonsList.map(p => existingNicknames.push(p.nickname)); //Get all existing nicknames and put in an array
+    }
+    
     if(chance==0){ //If Probability returns 0, pokemon is not caught 
         return alert("Oops, better luck next time!");
     } else{

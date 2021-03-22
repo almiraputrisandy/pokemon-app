@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <Navbar fixed="top" bg="light" expand="lg">
+      <Navbar sticky="top" bg="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-center" style={{ flex: 1}}>

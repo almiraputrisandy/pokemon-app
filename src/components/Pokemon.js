@@ -20,7 +20,12 @@ function Pokemon(props){
     }
 
     var pokemonsList = JSON.parse(window.localStorage.getItem("myPokemons")); //Get list of caught pokemon
-    ownedTotal = pokemonsList.filter(n => n.name === props.pokemon.name).length; //Count total of owned pokemons
+    if (pokemonsList!=null){
+        ownedTotal = pokemonsList.filter(n => n.name === props.pokemon.name).length; //Count total of owned pokemons
+    }else{
+        ownedTotal = 0;
+    }
+    
 
     return(
         <div key={props.pokemon.name} style={{ textAlign: 'center', padding: '3%', paddingTop: '0'}}>

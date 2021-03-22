@@ -12,7 +12,7 @@ function Pokemons() {
 
   return (
     <div>
-      <Container style={{ marginTop: '5%' }}>
+      <Container>
         <Row style={{ marginBottom: '5%' }}>
           {data.pokemons.results.map((currentPokemon) => ( //For every pokemon in the list
             <Col xs="12" md="6" style={{ padding: '2%' }} key={currentPokemon.url}>
