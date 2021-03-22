@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLazyQuery } from '@apollo/client';
-import { GET_POKEMON_DETAILS } from './graphql/graphqlScript';
+import { GET_POKEMON_DETAILS } from '../graphql/graphqlScript';
 import { Button } from 'react-bootstrap';
 import PokemonDetails from './PokemonDetails';
 

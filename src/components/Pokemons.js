@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import  Pokemon  from './Pokemon';
-import { GET_POKEMONS } from './graphql/graphqlScript';
+import { GET_POKEMONS } from '../graphql/graphqlScript';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 function Pokemons() {

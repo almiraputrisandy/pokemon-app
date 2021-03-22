@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import Pokemons from './Pokemons';
-import MyPokemons from './MyPokemons';
+import Pokemons from './components/Pokemons';
+import MyPokemons from './components/MyPokemons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 
